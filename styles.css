@@ -1,0 +1,85 @@
+body {
+    background-color:#FFFAF0;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar container */
+.navbar {
+    background-color: #1e293b;
+    padding: 20px;
+}
+
+/* Main menu */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* Menu items */
+.nav-menu li {
+    position: relative;
+}
+
+/* Links */
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+/* Hover effect */
+.nav-menu a:hover {
+    background-color: #336699;
+    border-radius: 5px;
+}
+
+/* Dropdown menu hidden by default */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #334155;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    list-style: none; 
+}
+
+/* Dropdown links */
+.dropdown-menu li a {
+    padding: 10px;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+   display: block;
+}
+
+@media screen and (max-width: 768px) {
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dropdown-menu {
+        position: static;
+        background-color: #1e293b;
+        box-shadow: none;
+    }
+
+    .active {
+    background-color: #3b82f6;
+    border-radius: 5px;
+}
+
+
+}
